@@ -2,7 +2,6 @@ package com.iot.impacta.exceptionhandler;
 
 import java.time.OffsetDateTime;
 
-import org.springframework.beans.factory.parsing.Problem;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
