@@ -1,5 +1,5 @@
-CREATE TABLE public.tb_login (
+CREATE TABLE public.tb_user (
     id bigint NOT NULL,
-    nome character varying(255),
-    digital character varying(255)
+    name character varying(255),
+    fingerprint character varying(255)
 );

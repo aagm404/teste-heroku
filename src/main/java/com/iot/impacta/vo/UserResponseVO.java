@@ -2,12 +2,12 @@ package com.iot.impacta.vo;
 
 import java.io.Serializable;
 
-public class LoginResponseVO implements Serializable {
+public class UserResponseVO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
 	private Long id;
-	private String nome;
+	private String name;
 	
 	public Long getId() {
 		return id;
@@ -17,11 +17,11 @@ public class LoginResponseVO implements Serializable {
 		this.id = id;
 	}
 	
-	public String getNome() {
-		return nome;
+	public String getName() {
+		return name;
 	}
 	
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setNome(String name) {
+		this.name = name;
 	}
 }

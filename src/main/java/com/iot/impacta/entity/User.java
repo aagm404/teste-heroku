@@ -9,8 +9,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "tb_login")
-public class Login implements Serializable {
+@Table(name = "tb_user")
+public class User implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -18,8 +18,8 @@ public class Login implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	private String nome;
-	private String digital;
+	private String name;
+	private String fingerprint;
 	
 	public Long getId() {
 		return id;
@@ -29,20 +29,19 @@ public class Login implements Serializable {
 		this.id = id;
 	}
 	
-	public String getNome() {
-		return nome;
+	public String getName() {
+		return name;
 	}
 	
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
-	public String getDigital() {
-		return digital;
+	public String getFingerprint() {
+		return fingerprint;
 	}
 	
-	public void setDigital(String digital) {
-		this.digital = digital;
+	public void setFingerprint(String fingerprint) {
+		this.fingerprint = fingerprint;
 	}
-
 }
