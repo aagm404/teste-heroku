@@ -8,6 +8,7 @@ public class UserResponseVO implements Serializable {
 	
 	private Long id;
 	private String name;
+	private String fingerprint;
 	
 	public Long getId() {
 		return id;
@@ -21,7 +22,15 @@ public class UserResponseVO implements Serializable {
 		return name;
 	}
 	
-	public void setNome(String name) {
+	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getFingerprint() {
+		return fingerprint;
+	}
+
+	public void setFingerprint(String fingerprint) {
+		this.fingerprint = fingerprint;
 	}
 }

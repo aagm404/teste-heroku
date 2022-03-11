@@ -30,7 +30,7 @@ public class UserService {
 
 	private UserResponseVO entityToResponseVOConverter(User login, UserResponseVO response) {
 		response.setId(login.getId());
-		response.setNome(login.getName());
+		response.setName(login.getName());
 		
 		return response;
 	}
